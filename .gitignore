@@ -1,0 +1,13 @@
+# OS/system
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+.env.*
+
+# Node
+node_modules/
+
+# Common tooling
+*.log

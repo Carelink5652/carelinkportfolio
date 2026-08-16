@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://carelink.example.com/</loc>
+  </url>
+  <url>
+    <loc>https://carelink.example.com/pages/work.html</loc>
+  </url>
+  <url>
+    <loc>https://carelink.example.com/pages/services.html</loc>
+  </url>
+  <url>
+    <loc>https://carelink.example.com/pages/about.html</loc>
+  </url>
+  <url>
+    <loc>https://carelink.example.com/pages/contact.html</loc>
+  </url>
+</urlset>
