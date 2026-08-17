@@ -1,417 +1,560 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CARELINK | Software Development Company</title>
-    <meta
-      name="description"
-      content="CARELINK designs and develops websites, applications and custom digital solutions that help businesses and organizations solve real problems."
-    />
-    <meta name="author" content="CareLink" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="CARELINK | Software Development Company" />
-    <meta
-      property="og:description"
-      content="We build digital products that turn ideas into impact."
-    />
-    <meta property="og:image" content="assets/brand/favicon.svg" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="CARELINK | Software Development Company" />
-    <meta name="twitter:description" content="We build digital products that turn ideas into impact." />
-    <link rel="canonical" href="https://carelink.example.com/" />
-    <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    <script src="js/supabase.js" defer></script>
-    <script src="js/contact.js" defer></script>
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <div class="page-shell">
-      <header class="site-header">
-        <div class="container nav-wrap">
-          <a href="index.html" class="brand" aria-label="CareLink home">
-            <span class="brand-mark" aria-hidden="true">
-              <span class="brand-mark__core"></span>
-            </span>
-            <span class="brand-wordmark">CARELINK</span>
-          </a>
-
-          <nav class="main-nav" aria-label="Primary navigation">
-            <ul>
-              <li><a href="pages/work.html">Work</a></li>
-              <li><a href="pages/services.html">Services</a></li>
-              <li><a href="pages/about.html">About</a></li>
-              <li><a href="pages/contact.html">Contact</a></li>
-            </ul>
-          </nav>
-
-          <a class="button button--primary nav-cta" href="pages/contact.html">Start a Project</a>
-
-          <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-      </header>
-
-      <main>
-        <section class="hero section-pad">
-          <div class="container hero-grid">
-            <div class="hero-copy reveal">
-              <p class="eyebrow">SOFTWARE DEVELOPMENT COMPANY</p>
-              <h1>We build digital products that turn ideas into impact.</h1>
-              <p class="lead">
-                CareLink designs and develops websites, applications and custom digital solutions
-                that help businesses and organizations solve real problems.
-              </p>
-              <div class="hero-actions">
-                <a class="button button--primary" href="pages/contact.html">Start a Project</a>
-                <a class="button button--secondary" href="pages/work.html">Explore Our Work</a>
-              </div>
-              <ul class="hero-meta" aria-label="Key value points">
-                <li>Healthcare technology</li>
-                <li>Custom software</li>
-                <li>Product strategy</li>
-              </ul>
-            </div>
-
-            <div class="hero-visual reveal" aria-label="Selected CareLink product previews">
-              <div class="dashboard-frame">
-                <div class="window-bar">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <div class="dashboard-body">
-                  <div class="dashboard-hero">
-                    <div class="mini-panel panel-lg">
-                      <span class="panel-label">CareLink Telehealth</span>
-                      <strong>Connected care journeys</strong>
-                    </div>
-                    <div class="mini-panel panel-sm">
-                      <span>Appointments</span>
-                      <strong>24</strong>
-                    </div>
-                  </div>
-                  <div class="dashboard-grid">
-                    <div class="mini-panel chart-panel">
-                      <span class="panel-label">Consultation flow</span>
-                      <div class="chart-bars">
-                        <span style="height: 35%"></span>
-                        <span style="height: 55%"></span>
-                        <span style="height: 48%"></span>
-                        <span style="height: 72%"></span>
-                        <span style="height: 82%"></span>
-                        <span style="height: 100%"></span>
-                      </div>
-                    </div>
-                    <div class="mini-panel task-panel">
-                      <span class="panel-label">Priority actions</span>
-                      <ul>
-                        <li>Review assessment</li>
-                        <li>Prepare follow-up</li>
-                        <li>Update care plan</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section-pad value-statement">
-          <div class="container narrow">
-            <p class="section-kicker">Ideas → Technology → Impact</p>
-            <h2>We build digital products that turn ideas into impact.</h2>
-          </div>
-        </section>
-
-        <section class="section-pad work-overview" id="work">
-          <div class="container">
-            <div class="section-heading reveal">
-              <div>
-                <p class="eyebrow">SELECTED WORK</p>
-                <h2>Products and platforms built for real use.</h2>
-              </div>
-              <a class="text-link" href="pages/work.html">View all work</a>
-            </div>
-
-            <div class="project-grid">
-              <article class="project-card reveal">
-                <div class="project-shot project-shot--telehealth">
-                  <span class="project-tag">Healthcare Technology</span>
-                </div>
-                <div class="project-body">
-                  <h3>CareLink Telehealth</h3>
-                  <p>Digital care workflows designed to support patient communication, appointments and follow-up.</p>
-                  <ul class="chip-list">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Supabase</li>
-                  </ul>
-                  <a href="pages/work.html#telehealth" class="text-link">View Case Study</a>
-                </div>
-              </article>
-
-              <article class="project-card reveal">
-                <div class="project-shot project-shot--cbt">
-                  <span class="project-tag">Education Technology</span>
-                </div>
-                <div class="project-body">
-                  <h3>AlliedExam / Nursing CBT Platform</h3>
-                  <p>Online assessment experiences created for structured study and exam preparation in nursing education.</p>
-                  <ul class="chip-list">
-                    <li>Web App</li>
-                    <li>Assessment UI</li>
-                    <li>Responsive</li>
-                  </ul>
-                  <a href="pages/work.html#cbt" class="text-link">View Case Study</a>
-                </div>
-              </article>
-
-              <article class="project-card reveal">
-                <div class="project-shot project-shot--wash">
-                  <span class="project-tag">Concept</span>
-                </div>
-                <div class="project-body">
-                  <h3>Premium Car Wash Website</h3>
-                  <p>Business website concept focused on booking, service promotion and a polished customer experience.</p>
-                  <ul class="chip-list">
-                    <li>Landing Page</li>
-                    <li>Booking UX</li>
-                    <li>Brand Design</li>
-                  </ul>
-                  <a href="pages/work.html#wash" class="text-link">View Case Study</a>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section-pad services-overview">
-          <div class="container">
-            <div class="section-heading reveal">
-              <div>
-                <p class="eyebrow">SERVICES</p>
-                <h2>Digital products built around clear business goals.</h2>
-              </div>
-              <a class="text-link" href="pages/services.html">See all services</a>
-            </div>
-
-            <div class="services-grid">
-              <article class="service-card reveal">
-                <span class="service-number">01</span>
-                <h3>Web Development</h3>
-                <p>Responsive websites and landing pages designed around business goals.</p>
-              </article>
-              <article class="service-card reveal">
-                <span class="service-number">02</span>
-                <h3>Web Applications</h3>
-                <p>Custom platforms, dashboards and online systems for operational needs.</p>
-              </article>
-              <article class="service-card reveal">
-                <span class="service-number">03</span>
-                <h3>Mobile Applications</h3>
-                <p>Mobile-focused digital products designed around real user behavior.</p>
-              </article>
-              <article class="service-card reveal">
-                <span class="service-number">04</span>
-                <h3>Healthcare Technology</h3>
-                <p>Digital solutions designed around healthcare workflows and user needs.</p>
-              </article>
-              <article class="service-card reveal">
-                <span class="service-number">05</span>
-                <h3>Business Automation</h3>
-                <p>Systems that reduce repetitive work and improve operational efficiency.</p>
-              </article>
-              <article class="service-card reveal">
-                <span class="service-number">06</span>
-                <h3>Custom Software</h3>
-                <p>Software built around a specific business challenge, process or workflow.</p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section-pad why-carelink">
-          <div class="container">
-            <div class="section-heading reveal">
-              <div>
-                <p class="eyebrow">WHY CARELINK</p>
-                <h2>Practical software development with a clear point of view.</h2>
-              </div>
-            </div>
-            <div class="reason-grid">
-              <article class="reason-card reveal">
-                <h3>We start with the problem</h3>
-                <p>We understand the objective before choosing technology so the product fits the business.</p>
-              </article>
-              <article class="reason-card reveal">
-                <h3>We build for real users</h3>
-                <p>Products need to be useful, understandable and reliable across everyday use.</p>
-              </article>
-              <article class="reason-card reveal">
-                <h3>We keep things practical</h3>
-                <p>We avoid unnecessary technical complexity and focus on the right solution for the goal.</p>
-              </article>
-              <article class="reason-card reveal">
-                <h3>We build together</h3>
-                <p>Clients work directly with the people building their product, keeping communication clear.</p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section-pad tech-stack">
-          <div class="container narrow">
-            <p class="eyebrow">TECHNOLOGIES</p>
-            <h2>Tools used to deliver working products.</h2>
-            <ul class="technology-list" aria-label="Used technologies">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>Supabase</li>
-              <li>Git</li>
-              <li>GitHub</li>
-              <li>Netlify</li>
-              <li>VS Code</li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="section-pad process-block">
-          <div class="container">
-            <div class="section-heading reveal">
-              <div>
-                <p class="eyebrow">OUR PROCESS</p>
-                <h2>A straightforward path from idea to launch.</h2>
-              </div>
-            </div>
-
-            <div class="process-grid">
-              <article class="process-step reveal">
-                <span>01</span>
-                <h3>Discover</h3>
-                <p>Understand the idea, users, business and problem.</p>
-              </article>
-              <article class="process-step reveal">
-                <span>02</span>
-                <h3>Plan</h3>
-                <p>Define structure and the technical direction.</p>
-              </article>
-              <article class="process-step reveal">
-                <span>03</span>
-                <h3>Design</h3>
-                <p>Create the interface and user experience.</p>
-              </article>
-              <article class="process-step reveal">
-                <span>04</span>
-                <h3>Build</h3>
-                <p>Develop, integrate and test the product.</p>
-              </article>
-              <article class="process-step reveal">
-                <span>05</span>
-                <h3>Launch</h3>
-                <p>Deploy and verify the finished product.</p>
-              </article>
-              <article class="process-step reveal">
-                <span>06</span>
-                <h3>Improve</h3>
-                <p>Continue evolving the product after launch.</p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section-pad founders">
-          <div class="container">
-            <div class="section-heading reveal">
-              <div>
-                <p class="eyebrow">FOUNDERS</p>
-                <h2>The people behind CareLink.</h2>
-              </div>
-            </div>
-            <div class="founders-grid">
-              <article class="founder-card reveal">
-                <div class="founder-photo founder-photo--one" aria-label="Portrait of Kolawole Peter Obebe"></div>
-                <div class="founder-copy">
-                  <h3>Kolawole Peter Obebe</h3>
-                  <p class="role">Co-founder</p>
-                  <p>
-                    CareLink brings together product thinking and practical software delivery,
-                    with a focus on digital experiences that support real business and user needs.
-                  </p>
-                </div>
-              </article>
-
-              <article class="founder-card reveal">
-                <div class="founder-photo founder-photo--two" aria-label="Portrait of Kareem Damilola Roseline"></div>
-                <div class="founder-copy">
-                  <h3>Kareem Damilola Roseline</h3>
-                  <p class="role">Co-founder</p>
-                  <p>
-                    CareLink combines practical problem solving with a strong understanding of healthcare and technology-driven delivery.
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section-pad final-cta-block">
-          <div class="container final-cta reveal">
-            <div>
-              <p class="eyebrow">START A PROJECT</p>
-              <h2>Have an idea worth building?</h2>
-              <p>Tell us what you’re working on. Whether you have a complete specification or just an idea, let’s talk about it.</p>
-            </div>
-            <div class="cta-actions">
-              <a class="button button--primary" href="pages/contact.html">Start a Project</a>
-              <a class="button button--secondary" href="https://wa.me/2340000000000" target="_blank" rel="noreferrer">Chat on WhatsApp</a>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer class="site-footer">
-        <div class="container footer-grid">
-          <div>
-            <a href="index.html" class="brand brand--footer" aria-label="CareLink home">
-              <span class="brand-mark" aria-hidden="true">
-                <span class="brand-mark__core"></span>
-              </span>
-              <span class="brand-wordmark">CARELINK</span>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareLink — Software Development Company</title>
+    <meta name="description" content="CareLink designs and develops websites, applications and custom digital solutions that help businesses and organizations solve real problems.">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://carelink.dev">
+    <meta property="og:title" content="CareLink — Software Development Company">
+    <meta property="og:description" content="We build digital products that turn ideas into impact.">
+    <meta property="og:image" content="https://carelink.dev/og-image.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link rel="shortcut icon" href="./favicon.svg">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="./style.css">
+    
+    <!-- Preconnect for fonts (fallback only, not required) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo" aria-label="CareLink home">
+                <svg class="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <rect x="2" y="2" width="8" height="8" fill="#4F46E5" rx="1"/>
+                    <rect x="14" y="2" width="8" height="8" fill="#4F46E5" rx="1"/>
+                    <rect x="2" y="14" width="8" height="8" fill="#818CF8" rx="1"/>
+                    <rect x="14" y="14" width="8" height="8" fill="#4F46E5" rx="1"/>
+                </svg>
+                <span>CareLink</span>
             </a>
-            <p class="footer-tagline">Software that connects ideas to impact.</p>
-          </div>
-          <nav class="footer-nav" aria-label="Footer navigation">
-            <ul>
-              <li><a href="pages/work.html">Work</a></li>
-              <li><a href="pages/services.html">Services</a></li>
-              <li><a href="pages/about.html">About</a></li>
-              <li><a href="pages/contact.html">Contact</a></li>
+            
+            <button class="navbar-toggle" id="navbar-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="navbar-menu" id="navbar-menu">
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">Start a Project</a></li>
             </ul>
-          </nav>
-          <div class="footer-contact">
-            <a href="mailto:hello@carelink.example.com">hello@carelink.example.com</a>
-            <a href="https://wa.me/2340000000000" target="_blank" rel="noreferrer">WhatsApp</a>
-          </div>
         </div>
-        <div class="container footer-bottom">
-          <p>© 2026 CareLink. All rights reserved.</p>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <p class="eyebrow">SOFTWARE DEVELOPMENT COMPANY</p>
+                    <h1 class="hero-heading">We build digital products that turn ideas into impact.</h1>
+                    <p class="hero-description">CareLink designs and develops websites, applications and custom digital solutions that help businesses and organizations solve real problems.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Start a Project</a>
+                        <a href="#work" class="btn btn-secondary">Explore Our Work</a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="product-preview">
+                        <div class="preview-window">
+                            <div class="preview-header">
+                                <div class="preview-dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <span class="preview-title">Dashboard</span>
+                            </div>
+                            <div class="preview-content">
+                                <div class="preview-card">
+                                    <div class="card-label">Healthcare</div>
+                                    <div class="card-chart">
+                                        <div class="bar bar-1"></div>
+                                        <div class="bar bar-2"></div>
+                                        <div class="bar bar-3"></div>
+                                        <div class="bar bar-4"></div>
+                                    </div>
+                                </div>
+                                <div class="preview-card">
+                                    <div class="card-label">Web Apps</div>
+                                    <div class="card-stat">12,450</div>
+                                </div>
+                                <div class="preview-card">
+                                    <div class="card-label">Automation</div>
+                                    <div class="card-progress">
+                                        <div class="progress-bar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="preview-accent">CareLink</div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </footer>
-    </div>
-  </body>
+    </section>
+
+    <!-- Value Statement -->
+    <section class="value-statement">
+        <div class="container">
+            <h2>Technology should solve problems</h2>
+            <p>CareLink understands business problems. We design practical solutions and build products people can actually use. Every line of code, every design decision and every conversation starts with understanding what really matters to your business and your users.</p>
+        </div>
+    </section>
+
+    <!-- Selected Work -->
+    <section class="work" id="work">
+        <div class="container">
+            <div class="section-header">
+                <h2>Selected Work</h2>
+                <p>Projects that demonstrate our approach to digital product development</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1: CareLink Telehealth -->
+                <article class="project-card">
+                    <div class="project-visual">
+                        <div class="project-mockup telehealth-mockup">
+                            <div class="mockup-header">CareLink Telehealth</div>
+                            <div class="mockup-content">
+                                <div class="mockup-item appointment">
+                                    <div class="mockup-label">Appointment</div>
+                                    <div class="mockup-time">2:30 PM</div>
+                                </div>
+                                <div class="mockup-item metric">
+                                    <div class="mockup-label">Patients</div>
+                                    <div class="mockup-stat">324</div>
+                                </div>
+                                <div class="mockup-item metric">
+                                    <div class="mockup-label">Online</div>
+                                    <div class="mockup-stat">18</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Healthcare Technology</span>
+                        <h3 class="project-title">CareLink Telehealth</h3>
+                        <p class="project-description">Digital healthcare platform connecting patients with qualified practitioners through secure video consultations and appointment management.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <a href="#" class="project-cta">View Case Study →</a>
+                    </div>
+                </article>
+
+                <!-- Project 2: AlliedExam -->
+                <article class="project-card">
+                    <div class="project-visual">
+                        <div class="project-mockup alliedexam-mockup">
+                            <div class="mockup-header">AlliedExam</div>
+                            <div class="mockup-content">
+                                <div class="mockup-item lesson">
+                                    <div class="mockup-label">Lesson</div>
+                                    <div class="mockup-progress"></div>
+                                </div>
+                                <div class="mockup-item question">
+                                    <div class="mockup-label">Questions</div>
+                                    <div class="mockup-stat">48/50</div>
+                                </div>
+                                <div class="mockup-item score">
+                                    <div class="mockup-label">Score</div>
+                                    <div class="mockup-stat">94%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category">Education Technology</span>
+                        <h3 class="project-title">AlliedExam</h3>
+                        <p class="project-description">CBT and learning platform for healthcare students. Adaptive practice tests, progress tracking and personalized learning paths for exam preparation.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="#" class="project-cta">View Case Study →</a>
+                    </div>
+                </article>
+
+                <!-- Project 3: Premium Car Wash -->
+                <article class="project-card">
+                    <div class="project-visual">
+                        <div class="project-mockup carwash-mockup">
+                            <div class="mockup-header">Premium Car Wash</div>
+                            <div class="mockup-content">
+                                <div class="mockup-item service">
+                                    <div class="mockup-label">Deluxe</div>
+                                    <div class="mockup-price">$49</div>
+                                </div>
+                                <div class="mockup-item service">
+                                    <div class="mockup-label">Premium</div>
+                                    <div class="mockup-price">$79</div>
+                                </div>
+                                <div class="mockup-item booking">
+                                    <div class="mockup-label">Book Now</div>
+                                    <div class="mockup-action">→</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-category badge-concept">CONCEPT PREVIEW</span>
+                        <span class="project-category">Business Website</span>
+                        <h3 class="project-title">Premium Car Wash</h3>
+                        <p class="project-description">Modern business website focused on services and customer enquiries. Online booking, service showcases and customer testimonials integrated with contact capabilities.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="#" class="project-cta">View Case Study →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Services</h2>
+                <p>End-to-end digital product development</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-number">01</div>
+                    <h3>Web Development</h3>
+                    <p>Responsive websites and landing pages built for performance and conversion.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">02</div>
+                    <h3>Web Applications</h3>
+                    <p>Custom platforms, dashboards and online systems tailored to your business.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">03</div>
+                    <h3>Mobile Applications</h3>
+                    <p>Mobile-focused digital products for iOS and Android platforms.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">04</div>
+                    <h3>Healthcare Technology</h3>
+                    <p>Digital solutions built around real healthcare needs and compliance requirements.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">05</div>
+                    <h3>Business Automation</h3>
+                    <p>Systems that reduce repetitive work and streamline business operations.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-number">06</div>
+                    <h3>Custom Software</h3>
+                    <p>Software built specifically around a business problem or unique requirement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why CareLink -->
+    <section class="why-carelink" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why CareLink</h2>
+                <p>Our philosophy drives everything we build</p>
+            </div>
+            
+            <div class="philosophy-grid">
+                <div class="philosophy-item">
+                    <div class="philosophy-icon">🎯</div>
+                    <h3>We start with the problem</h3>
+                    <p>Not trends, not technology for its own sake. We dig into the real problem you're solving.</p>
+                </div>
+                <div class="philosophy-item">
+                    <div class="philosophy-icon">👥</div>
+                    <h3>We build for real users</h3>
+                    <p>Every design decision and feature is informed by actual user needs and behavior.</p>
+                </div>
+                <div class="philosophy-item">
+                    <div class="philosophy-icon">⚙️</div>
+                    <h3>We keep technology practical</h3>
+                    <p>Simple solutions beat complex ones. We choose tools that solve your problem, not our preferences.</p>
+                </div>
+                <div class="philosophy-item">
+                    <div class="philosophy-icon">🤝</div>
+                    <h3>We build together with clients</h3>
+                    <p>You're part of the process. Clear communication and collaboration from discovery through launch.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="technology">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technology</h2>
+                <p>Tools we trust and use daily</p>
+            </div>
+            
+            <div class="tech-grid">
+                <div class="tech-pill">HTML5</div>
+                <div class="tech-pill">CSS3</div>
+                <div class="tech-pill">JavaScript</div>
+                <div class="tech-pill">React</div>
+                <div class="tech-pill">Vue.js</div>
+                <div class="tech-pill">Node.js</div>
+                <div class="tech-pill">PostgreSQL</div>
+                <div class="tech-pill">Supabase</div>
+                <div class="tech-pill">Firebase</div>
+                <div class="tech-pill">Git</div>
+                <div class="tech-pill">GitHub</div>
+                <div class="tech-pill">Netlify</div>
+                <div class="tech-pill">VS Code</div>
+                <div class="tech-pill">Figma</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Process</h2>
+                <p>How we approach every project</p>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3>Discover</h3>
+                    <p>Understand the idea, users and core problem we're solving.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3>Plan</h3>
+                    <p>Define product structure, features and technical direction.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3>Design</h3>
+                    <p>Create interface, interactions and user experience flows.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <h3>Build</h3>
+                    <p>Develop, test and refine the product to production quality.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">05</div>
+                    <h3>Launch</h3>
+                    <p>Deploy the product and ensure a smooth release.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">06</div>
+                    <h3>Improve</h3>
+                    <p>Continue evolving the product based on real usage and feedback.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founders -->
+    <section class="founders">
+        <div class="container">
+            <div class="section-header">
+                <h2>Founded by</h2>
+                <p>Meet the people behind CareLink</p>
+            </div>
+            
+            <div class="founders-grid">
+                <div class="founder-card">
+                    <div class="founder-portrait">
+                        <div class="portrait-initials">KP</div>
+                    </div>
+                    <h3 class="founder-name">Kolawole Peter Obebe</h3>
+                    <p class="founder-role">Co-founder</p>
+                    <p class="founder-bio">Co-founder at CareLink, focused on building practical digital solutions that solve real problems.</p>
+                </div>
+                
+                <div class="founder-card">
+                    <div class="founder-portrait">
+                        <div class="portrait-initials">KR</div>
+                    </div>
+                    <h3 class="founder-name">Kareem Damilola Roseline</h3>
+                    <p class="founder-role">Co-founder</p>
+                    <p class="founder-bio">Co-founder at CareLink, focused on building practical digital solutions that solve real problems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Have an idea worth building?</h2>
+            <p>Tell us what you're working on. Whether you have a complete specification or just an idea, let's talk about it.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Start a Project</a>
+                <a href="https://wa.me/?text=Hi%20CareLink%2C%20I%27d%20like%20to%20discuss%20a%20project" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Chat on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-header">
+                    <h2>Get in Touch</h2>
+                    <p>We'd love to hear about your project. Fill out the form below and we'll be in touch within 24 hours.</p>
+                </div>
+                
+                <form class="contact-form" id="contact-form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="whatsapp">WhatsApp</label>
+                        <input type="tel" id="whatsapp" name="whatsapp" placeholder="+1 (555) 000-0000">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="company">Company/Organization</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="project_type">Project Type *</label>
+                        <select id="project_type" name="project_type" required>
+                            <option value="">Select a project type</option>
+                            <option value="website">Website</option>
+                            <option value="web_app">Web Application</option>
+                            <option value="mobile_app">Mobile Application</option>
+                            <option value="automation">Business Automation</option>
+                            <option value="healthcare">Healthcare Technology</option>
+                            <option value="custom">Custom Software</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span class="error-message" id="project_type-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="budget">Budget Range</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select budget range</option>
+                            <option value="under_5k">Under $5,000</option>
+                            <option value="5k_15k">$5,000 - $15,000</option>
+                            <option value="15k_50k">$15,000 - $50,000</option>
+                            <option value="50k_100k">$50,000 - $100,000</option>
+                            <option value="over_100k">$100,000+</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="description">Project Description *</label>
+                        <textarea id="description" name="description" rows="6" required placeholder="Tell us about your project..."></textarea>
+                        <span class="error-message" id="description-error"></span>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary full-width">Send Project Request</button>
+                    
+                    <div class="form-message" id="form-message"></div>
+                    <div class="form-fallback" id="form-fallback" style="display: none;">
+                        <p><strong>Prefer to reach out directly?</strong></p>
+                        <p>Email us at: <a href="mailto:hello@carelink.dev">hello@carelink.dev</a></p>
+                        <p>WhatsApp: <a href="https://wa.me/?text=Hi%20CareLink%2C%20I%27d%20like%20to%20discuss%20a%20project" target="_blank" rel="noopener noreferrer">Chat with us</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>CareLink</h4>
+                    <p>We build digital products that turn ideas into impact.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">Web Applications</a></li>
+                        <li><a href="#services">Mobile Apps</a></li>
+                        <li><a href="#services">Custom Software</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Get in Touch</h4>
+                    <ul>
+                        <li><a href="mailto:hello@carelink.dev">hello@carelink.dev</a></li>
+                        <li><a href="https://wa.me/?text=Hi%20CareLink%2C%20I%27d%20like%20to%20discuss%20a%20project" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                        <li><a href="#contact">Contact Form</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="year">2026</span> CareLink. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <span class="separator">•</span>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top" style="display: none;">
+        ↑
+    </button>
+
+    <!-- Scripts -->
+    <script src="./script.js" defer></script>
+</body>
 </html>
